@@ -60,8 +60,8 @@ def upload():
     for i in fichier:
         links.append(i)
     fichier.close()
-
-    downloader.downloader(links)
+    file = input("Enter the folder link from the root of the computer (with 3[1m / 3[0m) :\n")
+    downloader.downloader(links,file)
     print("All music has been uploaded !")
     return True
 

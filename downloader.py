@@ -1,6 +1,6 @@
 from pytube import YouTube
 
-def downloader(links):
+def downloader(links,file):
     counter = 0
     for url in links:
         counter += 1
@@ -8,7 +8,7 @@ def downloader(links):
         print("Download start")
         yt = YouTube(url)
         t = yt.streams.filter(only_audio=True)
-        t[0].download("G:/Mon Drive/NSI Project/Musics")
+        t[0].download(file)
         print(f"Download finish ({counter}/{len(links)})")
     print("______________")
     print(f"Download successfully ({counter}/{len(links)}) !")

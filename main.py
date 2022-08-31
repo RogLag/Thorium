@@ -15,7 +15,4 @@ def music():
     control.getLinks()
     print("The program is preparing to download the music(s), please wait...")
     time.sleep(6)
-<<<<<<< HEAD
     control.download()
-    
-music()

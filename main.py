@@ -1,9 +1,20 @@
-import Spotify
+import control
 import time
-import os
 
-Spotify.music()
-print("The program is preparing to download the music(s), please wait...")
-time.sleep(6)
-Spotify.upload()
-os.remove(".cache")
+def album():
+    control.init()
+    control.musics_albums()
+    control.getLinks()
+    print("The program is preparing to download the music(s), please wait...")
+    time.sleep(6)
+    control.download()
+
+def music():
+    control.init()
+    control.music_artist()
+    control.getLinks()
+    print("The program is preparing to download the music(s), please wait...")
+    time.sleep(6)
+    control.download()
+    
+music()

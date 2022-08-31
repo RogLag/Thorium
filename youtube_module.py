@@ -10,8 +10,8 @@ def search(query,api_key):
         res = request.execute()
         for item in res['items']:
             fichier.write(f"https://www.youtube.com/watch?v={item['id']['videoId']}\n")
-        return True
+        return False
     except:
         print("\nQuotaError\n")
-        return False
+        return True
     

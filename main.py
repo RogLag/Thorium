@@ -16,5 +16,3 @@ def music():
     print("The program is preparing to download the music(s), please wait...")
     time.sleep(6)
     control.download()
-    
-music()

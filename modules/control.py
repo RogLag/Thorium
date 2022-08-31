@@ -1,8 +1,8 @@
 from ast import Continue
 import spotipy
-import spotify_module
-import youtube_module
-import downloader_module
+import modules.spotify_module as spotify_module
+import modules.youtube_module as youtube_module
+import modules.downloader_module as downloader_module
 import os
 from spotipy.oauth2 import SpotifyClientCredentials
 

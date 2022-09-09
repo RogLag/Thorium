@@ -36,18 +36,10 @@ def music():
     print("The program is preparing to download the music(s), please wait...")
     time.sleep(6)
     control.download()
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 0d892de66eae572ab004271c03c322211f7890a0
 if __name__ == "__main__":
     i = input("Which function to execute? (1 or 2):\n")
     if i == "1":
         album()
     if i == "2":
-<<<<<<< HEAD
         music()
-=======
-        music()
->>>>>>> 0d892de66eae572ab004271c03c322211f7890a0
